@@ -3,38 +3,218 @@
 <head>
   <meta charset="utf-8">
   <title>Charlie</title>
-  <script src="vendors/angular.min.js" charset="utf-8"></script>
-  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
-  <script src="scripts/client.js" charset="utf-8"></script>
-  <script src="scripts/github.service.js" charset="utf-8"></script>
-  <script src="scripts/controllers/profile.js" charset="utf-8"></script>
-  <script src="scripts/controllers/repos.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
+
+
   <link href="https://fonts.googleapis.com/css?family=Orbitron|Permanent+Marker" rel="stylesheet">
-  <base href="/">
 </head>
-<body ng-app="myApp">
-  <div class="wrapper">
+<body>
+
+
+
+  <!-- <div class="feature" id="featureAnimation"> -->
     <nav class="navbar navbar-toggleable-sm navbar-light">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a href="/">Home</a><span class="sr-only"></span></a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <button id ='home' class ='nav-link'>Home</buton>
+          </li>
+          <!-- style='text-decoration:none;font-family: Orbitron, sans-serif;'href="index.html" -->
+
+          <li class="nav-item">
+            <button id='resume' style= 'color: black;'class='xp' type="button" name="button">Resume</button>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/profile">Bio</a>
+            <button id='tech' style= 'color: black;'class='xp' type="button" name="button">Tech Experience</button>
           </li>
 
           <li class="nav-item">
-            <a href="/repos">My Portfolio</a>
+            <button id='extra' style= 'color: black;'class='xp' type="button" name="button">Preferred Languages</button>
+          </li>
+          <!-- //social media// -->
+          <li class="nav-item">
+            <a href="http://www.github.com/chargar"><img class='social' style ='padding:left; 50px;width: 50px; height: 50px; float:right;' src="styles/github-icon.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/charles-garnaas-71918137/"><img class='social'style ='width: 50px; height: 50px; float:right;' src="styles/Linkedin_circle.svg.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://primeacademy.slack.com/messages/G3CSL037C/"><img class='social'style ='width: 50px; height: 50px; float:right;' src="styles/slack.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://codepen.io/CharGar/pens/public/"><img class='social' style ='padding:left; 50px;width: 50px; height: 50px; float:right;' src="styles/codepen-logo.svg" alt=""></a>
           </li>
         </ul>
-      </div>
-    </nav>
+        <!-- //end social media// -->
+      </nav>
+    <!-- </div> feature animation -->
 
-    <div><ng-view></ng-view></div>
-  </div>
-</body>
-</html>
+    <!-- section 1 -->
+    <div class="sectionOne">
+      <h1 id="dayfour" style=''>Welcome to the Land of CharGar</h1>
+      <p>I like to play...</p>
+
+      <div class="roateMe">
+        <div style= 'margin-left:45%; margin-top:10%;'class="cube-container spin">
+          <div class="cube">
+            <figure class="side front">Animate Everything</figure>
+            <figure class="side back">Animate Everything</figure>
+            <figure class="side left">Animate Everything</figure>
+            <figure class="side right">Animate Everything</figure>
+            <figure class="side top">Animate Everything</figure>
+            <figure class="side bottom">Animate Everything</figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section 1 -->
+
+
+    <!-- section two -->
+    <div id="quote" class="codingResume" style='display:none;'>
+      <h1 style='z-index:1000;'class='reposTitle'>Resume</h1>
+      <div class='topShelf'>Charlie Garnaas || 1485 Idaho Ave West Falcon Heights, MN 55108 || Cgarnaas555@gmail.com || (612)812-8873</div>
+      <div class="education">
+        <h1 style='text-align: center;'>Education</h1>
+        <ul >
+          <li><b style='color: #3f6847;'>University Of Minnesota</b> <i>2004-2008</i></li>
+          <li><b style='color: #3f6847;'>Majors/Areas of Study</b> <i>Bachelor of Science; Comm Studies</i></li>
+          <li><b style='color: #3f6847;'>Minors/Areas of Study</b> <i>Housing Studies</i></li>
+          <li><b style='color: #3f6847;'>Kaplan University</b> <i>Broker/Commercial Realtors License</i></li>
+        </ul>
+      </div>
+
+
+      <button style='border-radius:10px; color:black;'id="animate">animate</button>
+
+    </div>
+              <!-- end section two -->
+
+
+    <!-- Start Section Three Tech Experience  -->
+    <div class="techXp"style='text-align:center;display:none;'>
+      <div id="scramble1"class="title" style="padding-top:20px;padding-bottom:20px;text-align: center; font-size:60px;"> Tech Experience</div>
+<!-- <div id="quoted"> -->
+      <div class="row" style="text-align:center;">
+        <div class="col-sm-3">jQuery</div>
+        <div id="scramble2"class="col-sm-3">0000000</div>
+        <div class="col-sm-3">HTML5</div>
+        <div class="col-sm-3">HTML</div>
+      </div>
+      <div class="row"id="charsCustom">
+        <div id="scramble3"class="col-sm-3">000000</div>
+        <div class="col-sm-3">Mongo</div>
+        <div class="col-sm-3">MongoDB</div>
+        <div class="col-sm-3">SQL</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">Express</div>
+        <div id="scramble4"class="col-sm-3">0000000</div>
+        <div class="col-sm-3">Postman</div>
+        <div class="col-sm-3">Postgress</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">CSS</div>
+        <div id="scramble5"class="col-sm-3">000000</div>
+        <div class="col-sm-3">SASS</div>
+        <div class="col-sm-3">SweetAlerts</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">Xcode</div>
+        <div class="col-sm-3">Swift</div>
+        <div class="col-sm-3">C++</div>
+        <div id="scramble6"class="col-sm-3">000000000</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">Gihub</div>
+        <div class="col-sm-3">Ajax</div>
+        <div id="scramble7" class="col-sm-3">00000</div>
+        <div class="col-sm-3">Google API</div>
+      </div>
+      <div class="row">
+        <div id="scramble8" class="col-sm-3">00000</div>
+        <div class="col-sm-3">Bower</div>
+        <div class="col-sm-3">NPM</div>
+        <div class="col-sm-3">git</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">Grunt</div>
+        <div  id="scramble9"class="col-sm-3">ass</div>
+        <div class="col-sm-3">OAuth</div>
+        <div class="col-sm-3">NodeMailer</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">GeoLocation</div>
+        <div class="col-sm-3">HTML</div>
+        <div class="col-sm-3">HTML5</div>
+        <div id="scramble10" class="col-sm-3">00000</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">Bootstrap</div>
+        <div class="col-sm-3">BootstrapUI</div>
+        <div id="scramble11" class="col-sm-3">000000</div>
+        <div class="col-sm-3"></div>
+      </div>
+<button class="eggs"style='margin:0 auto;text-align: center;color:black;background:silver;width:200px;height:50px;border-radius:10px;font-size:40px;'type="button" name="button">Animate</button>
+          </div>
+
+    <!-- End Section Three Tech Experience  -->
+
+
+
+
+    <!-- Start Section Three Tech Extras  -->
+
+    <div class="extras" style='display:none;text-align:center;'>
+      <div id="quoted">
+<h1 class="title" style="padding-top:20px;padding-bottom:20px;text-align: center; font-size:60px;">Tech Proficient</h1>
+<div class="row" style="text-align:center;">
+  <div class="col-sm-3">JQuery</div>
+  <div class="col-sm-3">JavaScript</div>
+  <div class="col-sm-3">HTML5</div>
+  <div class="col-sm-3">HTML</div>
+</div>
+<div class="row">
+  <div class="col-sm-3">Angular JS</div>
+  <div class="col-sm-3">Mongo</div>
+  <div class="col-sm-3">MongoDB</div>
+  <div class="col-sm-3">SQL</div>
+</div>
+    </div>
+<button class='goodAt' type="button" name="button">Animate</button>
+
+    </div>
+
+
+    <!-- End Section Three Tech Extras  -->
+
+
+
+    <!-- Apart of the feature animation <div id="featureBackground" style="pointer-events:none;"></div> -->
+
+
+
+
+
+
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="src/uncompressed/utils/SplitText.js"></script>
+    <script src="src/uncompressed/TimelineLite.js" charset="utf-8"></script>
+    <script src="src/uncompressed/TweenMax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" charset="utf-8"></script>
+    <script src="src/uncompressed/plugins/Physics2DPlugin.js" charset="utf-8"></script>
+    <script src="src/uncompressed/plugins/ScrambleTextPlugin.js" charset="utf-8"></script>
+    <script src="js/index.js"></script>
+    <script src="scripts/controllers/jq.js"></script>
+    <script src="scripts/controllers/jqq.js"></script>
+
+
+  </body>
+  </html>
